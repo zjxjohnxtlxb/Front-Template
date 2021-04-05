@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("http://weloveiconfonts.com/api/?family=entypo");
+/* Positioning */
+/* Box-model */
+/* Typography */
+/* Visual */
+/* Misc */
+* {
+  /* Positioning */
+  /* Box-model */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.container {
+  /* Positioning */
+  /* Box-model */
+  display: grid;
+  grid-template-columns: 1.5fr 7fr 0.5fr;
+  grid-template-rows: 10.1851851852vh 72.2222222222vh 18.5185185185vh;
+  grid-template-areas: "aside header ." "aside main ." "aside footer .";
+  width: 100vw;
+  height: 100vh;
+  /* Typography */
+  /* Visual */
+  background-color: #3D4C5D;
+  /* Misc */
+}
+.header {
+  /* Positioning */
+  /* Box-model */
+  grid-area: header;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.aside {
+  /* Positioning */
+  /* Box-model */
+  grid-area: aside;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 12.962962963vh 1fr 9.2592592593vh;
+  grid-template-areas: "logo" "menu" "deconnextion";
+  align-items: stretch;
+  justify-items: stretch;
+  min-width: 24.0740740741vh;
+  max-width: 27.7777777778vh;
+  padding-left: 2.6041666667vw;
+  margin-right: 4.6296296296vh;
+  margin-bottom: 4.6296296296vh;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.logo {
+  /* Positioning */
+  /* Box-model */
+  grid-area: logo;
+  width: 100%;
+  /* Typography */
+  /* Visual */
+  background: transparent url("../IMG/logo-big-header.png") center/contain no-repeat;
+  /* Misc */
+}
+
+.menu {
+  /* Positioning */
+  /* Box-model */
+  grid-area: menu;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-top: 4.6296296296vh;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.menu > li {
+  /* Positioning */
+  /* Box-model */
+  max-width: 3.125vw;
+  padding-top: 0.9259259259vh;
+  padding-right: 0.5208333333vw;
+  padding-bottom: 0.9259259259vh;
+  padding-left: 0.5208333333vw;
+  margin-bottom: 5.5555555556vh;
+  /* Typography */
+  list-style: none;
+  /* Visual */
+  /* Misc */
+}
+
+.menu > li > a {
+  /* Positioning */
+  /* Box-model */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo";
+  align-items: stretch;
+  justify-items: stretch;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+#profil {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  /* Misc */
+}
+
+.menu > li > a > label {
+  /* Positioning */
+  /* Box-model */
+  grid-area: logo;
+  max-width: 3.7037037037vh;
+  height: 3.7037037037vh;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.menu-home {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background: transparent url("../IMG/dashboard-small-w.png") center/contain no-repeat;
+  /* Misc */
+}
+
+.menu-contact {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background: transparent url("../IMG/profil-small-w.png") center/contain no-repeat;
+  /* Misc */
+}
+
+.menu-profil {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background: transparent url("../IMG/gamepad-small-j.png") center/contain no-repeat;
+  /* Misc */
+}
+
+.menu-resultats {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background: transparent url("../IMG/bar_chart-small-w.png") center/contain no-repeat;
+  /* Misc */
+}
+
+.menu-cv {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background: transparent url("../IMG/cv-small-w.png") center/contain no-repeat;
+  /* Misc */
+}
+
+.deconnextion > a {
+  /* Positioning */
+  /* Box-model */
+  grid-area: deconnextion;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo";
+  align-items: center;
+  justify-items: stretch;
+  padding-top: 0.9259259259vh;
+  padding-right: 0.5208333333vw;
+  padding-bottom: 0.9259259259vh;
+  padding-left: 0.5208333333vw;
+  margin-bottom: 5.5555555556vh;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.deconnextion {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  list-style: none;
+  /* Visual */
+  /* Misc */
+}
+
+.deconnextion > a > label {
+  /* Positioning */
+  /* Box-model */
+  grid-area: logo;
+  max-width: 3.7037037037vh;
+  height: 3.7037037037vh;
+  /* Typography */
+  /* Visual */
+  background: transparent url("../IMG/deconnextion-small-w.png") center/contain no-repeat;
+  /* Misc */
+}
+
+.footer {
+  /* Positioning */
+  /* Box-model */
+  grid-area: footer;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.main {
+  /* Positioning */
+  /* Box-model */
+  grid-area: main;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+/*# sourceMappingURL=identity.css.map */

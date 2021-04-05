@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("http://weloveiconfonts.com/api/?family=entypo");
+/* Positioning */
+/* Box-model */
+/* Typography */
+/* Visual */
+/* Misc */
+* {
+  /* Positioning */
+  /* Box-model */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.container {
+  /* Positioning */
+  /* Box-model */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 13.8888888889vh 32.4074074074vh 1fr;
+  grid-template-areas: "titre" "background" "main";
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.titre {
+  /* Positioning */
+  /* Box-model */
+  display: flex;
+  align-items: flex-end;
+  /* Typography */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 3.7037037037vh;
+  line-height: 5.5555555556vh;
+  font-family: Poppins;
+  color: #000000;
+  /* Visual */
+  /* Misc */
+}
+
+.backgrounds {
+  /* Positioning */
+  /* Box-model */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2.7777777778vh 1fr 2.7777777778vh;
+  grid-template-areas: ". ." "info photo" ". .";
+  margin-top: 4.6296296296vh;
+  margin-bottom: 4.6296296296vh;
+  /* Typography */
+  /* Visual */
+  background-color: #F0F0F0;
+  border-radius: 25px;
+  /* Misc */
+}
+
+.backgrounds-info {
+  /* Positioning */
+  /* Box-model */
+  grid-area: info;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4.6296296296vh 0.9259259259vh 4.6296296296vh;
+  grid-template-areas: "username" "." "userinfo";
+  justify-items: center;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.backgrounds-username {
+  /* Positioning */
+  /* Box-model */
+  grid-area: username;
+  /* Typography */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  font-size: 3.7037037037vh;
+  line-height: 12.7777777778vh;
+  font-family: Poppins;
+  color: #222222;
+  text-align: left;
+  /* Visual */
+  /* Misc */
+}
+
+.backgrounds-username > span {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  font-size: 3.7037037037vh;
+  line-height: 12.7777777778vh;
+  font-family: Poppins;
+  color: #222222;
+  text-align: left;
+  /* Visual */
+  /* Misc */
+}
+
+.backgrounds-userinfo {
+  grid-area: userinfo;
+}
+
+.backgrounds-userinfo > span {
+  /* Positioning */
+  /* Box-model */
+  padding-top: 0.462962963vh;
+  padding-right: 0.5208333333vw;
+  padding-bottom: 0.462962963vh;
+  padding-left: 0.5208333333vw;
+  /* Typography */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  font-size: 1.8518518519vh;
+  line-height: 12.7777777778vh;
+  font-family: Poppins;
+  color: #FFFFFF;
+  text-align: left;
+  /* Visual */
+  /* Misc */
+  background-color: #6983A0;
+  border-radius: 100px;
+}
+
+.backgrounds-photo {
+  /* Positioning */
+  /* Box-model */
+  grid-area: photo;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 17.5925925926vh;
+  grid-template-areas: "photo";
+  align-items: center;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.photo {
+  /* Positioning */
+  /* Box-model */
+  grid-area: photo;
+  display: grid;
+  grid-template-columns: 1fr 9.8958333333vw 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  /* Typography */
+  /* Visual */
+  background-color: transparent;
+  background-image: url("../IMG/Femme-freelance.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* Misc */
+}
+
+.photo > label {
+  /* Positioning */
+  /* Box-model */
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-left: 5.2083333333vw;
+  /* Typography */
+  /* Visual */
+  background-color: transparent;
+  background-image: url("../IMG/option-small-b.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* Misc */
+}
+
+.main {
+  /* Positioning */
+  /* Box-model */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 23.1481481481vh 23.1481481481vh;
+  grid-template-areas: "compte cv" "profil resultat";
+  column-gap: 1.6666666667vh;
+  row-gap: 1.6666666667vh;
+  padding-bottom: 4.6296296296vh;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.main > article {
+  /* Positioning */
+  /* Box-model */
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "icon option";
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.main-logo {
+  /* Positioning */
+  /* Box-model */
+  grid-area: icon;
+  max-width: 10.4166666667vw;
+  margin-top: 4.1666666667vh;
+  margin-bottom: 4.1666666667vh;
+  margin-left: 4.1666666667vw;
+  /* Typography */
+  /* Visual */
+  background-color: transparent;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* Misc */
+}
+
+.compte {
+  /* Positioning */
+  /* Box-model */
+  grid-area: compte;
+  /* Typography */
+  /* Visual */
+  background-color: #D88D81;
+  border-radius: 25px;
+  /* Misc */
+}
+
+.compte > .main-logo {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background-image: url("../IMG/profil-big.png");
+  /* Misc */
+}
+
+.cv > .main-logo {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background-image: url("../IMG/cv-big.png");
+  /* Misc */
+}
+
+.profil > .main-logo {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background-image: url("../IMG/gamepad-big.png");
+  /* Misc */
+}
+
+.resultat > .main-logo {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background-image: url("../IMG/bar_chart-big.png");
+  /* Misc */
+}
+
+.cv {
+  /* Positioning */
+  /* Box-model */
+  grid-area: cv;
+  /* Typography */
+  /* Visual */
+  background-color: #BA7F98;
+  border-radius: 25px;
+  /* Misc */
+}
+
+.profil {
+  /* Positioning */
+  /* Box-model */
+  grid-area: profil;
+  /* Typography */
+  /* Visual */
+  background-color: #7CABB4;
+  border-radius: 25px;
+  /* Misc */
+}
+
+.resultat {
+  /* Positioning */
+  /* Box-model */
+  grid-area: resultat;
+  /* Typography */
+  /* Visual */
+  background-color: #77B1D5;
+  border-radius: 25px;
+  /* Misc */
+}
+
+.main-option {
+  /* Positioning */
+  /* Box-model */
+  grid-area: option;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: "titre" "description";
+  align-items: end;
+  margin-top: 4.1666666667vh;
+  margin-bottom: 4.1666666667vh;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.main-option-titre {
+  /* Positioning */
+  /* Box-model */
+  grid-area: titre;
+  /* Typography */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  font-size: 2.7777777778vh;
+  line-height: 1.8518518519vh;
+  font-family: Poppins;
+  color: #FFFFFF;
+  text-align: left;
+  text-transform: uppercase;
+  /* Visual */
+  /* Misc */
+}
+
+.main-option-description {
+  /* Positioning */
+  /* Box-model */
+  grid-area: description;
+  padding-left: 1.5625vw;
+  /* Typography */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 1.8518518519vh;
+  line-height: 2.7777777778vh;
+  font-family: Poppins;
+  color: #FFFFFF;
+  text-align: left;
+  text-transform: uppercase;
+  /* Visual */
+  /* Misc */
+}
+
+/*# sourceMappingURL=home.css.map */

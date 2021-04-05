@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/accueil.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header"></header>
+        <iframe class="main" id="main" src="home.html" allowfullscreen="true">
+        </iframe>
+        <aside class="aside">
+            <article class="logo"></article>
+            <nav class="menu">
+                <li id="home">
+                    <a href="#home" class='username'>
+                        <label class="menu-home"></label>
+                        <span>
+                            <span id="prenom">Laura</span>
+                            <span id="nom">MEZZINA</span>
+                        </span>
+                    </a>
+                </li>
+                <li id="compte">
+                    <a href="#compte">
+                        <label class="menu-contact"></label>
+                        <span>Mon
+                            compte</span>
+                    </a>
+                </li>
+                <li id="profil">
+                    <a href="#profil">
+                        <label class="menu-profil"></label>
+                        <span>Mon
+                            profil</span>
+                    </a>
+                </li>
+                <li id="resultat">
+                    <a href="#resultat">
+                        <label class="menu-resultats"></label>
+                        <span>Mes
+                            résultats</span>
+                    </a>
+                </li>
+                <li id="cv">
+                    <a href="#cv">
+                        <label class="menu-cv"></label>
+                        <span>Mon
+                            CV
+                            Abilitz</span>
+                    </a>
+                </li>
+            </nav>
+            <li class="deconnextion">
+                <a href="#deconnextion">
+                    <label></label>
+                    <span>Déconnexion</span>
+                </a>
+            </li>
+        </aside>
+        <footer class="footer">
+            <nav class="footer-menu">
+                <details>
+                    <summary>CONTACT</summary>
+                    <ul class="footer-menu-list">
+                        <li><span id='no-rue'>00</span> Rue <span id='address'>xxxxxxxx</span>, <span
+                                id='post-code'>59XXX</span> <span id='ville'>xxxxx</span>, <span>Nord</span></li>
+                        <li><span>contact</span>@<span>email.com</span></li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>NAVIGATION</summary>
+                    <ul class="footer-menu-list">
+                        <li>Dashboard</li>
+                        <li>Mon compte</li>
+                        <li>Mon profil</li>
+                        <li>Mes résultats</li>
+                        <li>Mon CV</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>RESEAUX</summary>
+                    <ul class="footer-menu-list">
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>LinkedIn</li>
+                        <li>Instagram</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>SUPPORT</summary>
+                    <ul class="footer-menu-list support">
+                        <li><label class="support-logo-contact"></label><span>Contact us</span></li>
+                        <li><label class="support-logo-faq"></label><span>FAQ</span></li>
+                    </ul>
+                </details>
+            </nav>
+            <article class="footer-logo"></article>
+        </footer>
+    </div>
+</body>
+<script>
+    window.onload = function () {
+        if (location.hash !== '#deconnextion') {
+            let loc = location.hash.substring(1) + '.html';
+            window.frames['main'].src = loc;
+        };
+        window.onhashchange = function () {
+            if (location.hash !== '#deconnextion') {
+                let loc = location.hash.substring(1) + '.html';
+                window.frames['main'].src = loc;
+            };
+        };
+    };
+</script>
+
+</html>

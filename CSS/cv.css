@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("http://weloveiconfonts.com/api/?family=entypo");
+/* Positioning */
+/* Box-model */
+/* Typography */
+/* Visual */
+/* Misc */
+* {
+  /* Positioning */
+  /* Box-model */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.container {
+  /* Positioning */
+  /* Box-model */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 13.8888888889vh 32.4074074074vh 1fr;
+  grid-template-areas: "titre" "background" "main";
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.titre {
+  /* Positioning */
+  /* Box-model */
+  display: flex;
+  align-items: flex-end;
+  /* Typography */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 3.7037037037vh;
+  line-height: 5.5555555556vh;
+  font-family: Poppins;
+  color: #000000;
+  /* Visual */
+  /* Misc */
+}
+
+.main {
+  /* Positioning */
+  /* Box-model */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "cv buttons";
+  margin-top: 4.6296296296vh;
+  margin-bottom: 4.6296296296vh;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.cv {
+  /* Positioning */
+  /* Box-model */
+  grid-area: cv;
+  justify-self: center;
+  width: 80%;
+  height: 74.0740740741vh;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.boutons {
+  /* Positioning */
+  /* Box-model */
+  grid-area: buttons;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.boutons > button {
+  /* Positioning */
+  /* Box-model */
+  width: 18.2291666667vw;
+  height: 6.4814814815vh;
+  margin-bottom: 2.7777777778vh;
+  /* Typography */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  font-size: 2.037037037vh;
+  line-height: 3.0555555556vh;
+  font-family: Poppins;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  /* Visual */
+  background-color: #6983A0;
+  box-shadow: 0px 3px 6px #00000005;
+  border-radius: 6px;
+  /* Misc */
+}
+
+/*# sourceMappingURL=cv.css.map */

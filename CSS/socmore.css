@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("http://weloveiconfonts.com/api/?family=entypo");
+/* Positioning */
+/* Box-model */
+/* Typography */
+/* Visual */
+/* Misc */
+* {
+  /* Positioning */
+  /* Box-model */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.main {
+  /* Positioning */
+  /* Box-model */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "round element .";
+  justify-items: center;
+  align-items: center;
+  margin-top: 4.6296296296vh;
+  margin-right: 2.6041666667vw;
+  margin-bottom: 4.6296296296vh;
+  margin-left: 2.6041666667vw;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.round {
+  /* Positioning */
+  /* Box-model */
+  grid-area: round;
+  justify-self: end;
+  display: flex;
+  justify-content: center;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.round-memoire {
+  /* Positioning */
+  /* Box-model */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 71.3888888889vh;
+  height: 71.3888888889vh;
+  /* Typography */
+  /* Visual */
+  border-width: 4.1666666667vh;
+  border-style: solid;
+  border-color: #FEE698;
+  border-radius: 50%;
+  /* Misc */
+}
+
+.round-definition {
+  /* Positioning */
+  /* Box-model */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 59.7222222222vh;
+  height: 59.7222222222vh;
+  /* Typography */
+  /* Visual */
+  border-width: 4.1666666667vh;
+  border-style: solid;
+  border-color: #9AB8D5;
+  border-radius: 50%;
+  /* Misc */
+}
+
+.round-logique {
+  /* Positioning */
+  /* Box-model */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47.2222222222vh;
+  height: 47.2222222222vh;
+  /* Typography */
+  /* Visual */
+  border-width: 4.1666666667vh;
+  border-style: solid;
+  border-color: #EDA3A3;
+  border-radius: 50%;
+  /* Misc */
+}
+
+.round-sementique {
+  /* Positioning */
+  /* Box-model */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35.2777777778vh;
+  height: 35.2777777778vh;
+  /* Typography */
+  /* Visual */
+  border-width: 4.1666666667vh;
+  border-style: solid;
+  border-color: #A2E2A8;
+  border-radius: 50%;
+  /* Misc */
+}
+
+.score {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  font-size: 13.8888888889vh;
+  line-height: 18.5185185185vh;
+  font-family: Poppins;
+  text-align: center;
+  /* Visual */
+  /* Misc */
+}
+
+.element {
+  /* Positioning */
+  /* Box-model */
+  grid-area: element;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.element > div {
+  /* Positioning */
+  /* Box-model */
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo option";
+  margin-top: 4.6296296296vh;
+  margin-bottom: 4.6296296296vh;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.element > div > label {
+  /* Positioning */
+  /* Box-model */
+  grid-area: logo;
+  width: 4.1666666667vh;
+  height: 4.1666666667vh;
+  /* Typography */
+  /* Visual */
+  border-radius: 50%;
+  /* Misc */
+}
+
+.element > div > div {
+  /* Positioning */
+  /* Box-model */
+  grid-area: option;
+  /* Typography */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 2.7777777778vh;
+  line-height: 4.1666666667vh;
+  font-family: Poppins;
+  color: #707070;
+  text-align: left;
+  /* Visual */
+  /* Misc */
+}
+
+.element-memoire > label {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background-color: #FEE698;
+  /* Misc */
+}
+
+.element-definition > label {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background-color: #9AB8D5;
+  /* Misc */
+}
+
+.element-logique > label {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background-color: #EDA3A3;
+  /* Misc */
+}
+
+.element-sementique > label {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  background-color: #A2E2A8;
+  /* Misc */
+}
+
+/*# sourceMappingURL=socmore.css.map */

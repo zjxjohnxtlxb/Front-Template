@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("http://weloveiconfonts.com/api/?family=entypo");
+/* Positioning */
+/* Box-model */
+/* Typography */
+/* Visual */
+/* Misc */
+* {
+  /* Positioning */
+  /* Box-model */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.main {
+  /* Positioning */
+  /* Box-model */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 64.8148148148vh 6.4814814815vh;
+  grid-template-areas: "option" "button";
+  margin-top: 4.6296296296vh;
+  margin-right: 2.6041666667vw;
+  margin-bottom: 4.6296296296vh;
+  margin-left: 2.6041666667vw;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.main-option {
+  /* Positioning */
+  /* Box-model */
+  grid-area: option;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.main-option > label {
+  /* Positioning */
+  /* Box-model */
+  width: 41.6666666667vh;
+  height: 41.6666666667vh;
+  margin-top: 9.2592592593vh;
+  margin-right: 1.8518518519vh;
+  /* Typography */
+  /* Visual */
+  background-color: #F4F4F4;
+  /* Misc */
+}
+
+.main-button {
+  /* Positioning */
+  /* Box-model */
+  grid-area: button;
+  justify-self: center;
+  min-width: 15.625vw;
+  height: 6.4814814815vh;
+  /* Typography */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  font-size: 3.7037037037vh;
+  line-height: 6.1111111111vh;
+  font-family: Poppins;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* Visual */
+  background-color: #6983A0;
+  box-shadow: 0px 3px 6px #00000005;
+  border-radius: 6px;
+  /* Misc */
+}
+
+/*# sourceMappingURL=soc.css.map */

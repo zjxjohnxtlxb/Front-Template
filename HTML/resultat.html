@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/resultat.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <article class="titre">
+            <div>Mes résultats</div>
+        </article>
+        <nav class="menu">
+            <li id="per">
+                <a href="#per" onclick="javascript:window.frames['option'].src='per.html'">Personnalité</a>
+                <label></label>
+            </li>
+            <li id="cog">
+                <a href="#cog" onclick="javascript:window.frames['option'].src='cog.html'">Agilité cognitive</a>
+                <label></label>
+            </li>
+            <li id="soc">
+                <a href="#soc" onclick="javascript:window.frames['option'].src='soc.html'">Agilité Sociale</a>
+                <label></label>
+            </li>
+        </nav>
+        <iframe id="option" class='main' src="per.html"></iframe>
+    </div>
+</body>
+
+</html>

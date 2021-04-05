@@ -1,0 +1,150 @@
+@use '_outil'as o;
+@import '_init';
+
+/* Positioning */
+/* Box-model */
+/* Typography */
+/* Visual */
+/* Misc */
+* {
+    /* Positioning */
+    /* Box-model */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+.container {
+    /* Positioning */
+    /* Box-model */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: o.vh_calc(150px) o.vh_calc(150px) o.vh_calc(750px);
+    grid-template-areas:
+        "titre"
+        "nav"
+        "main"
+        "button";
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+.titre {
+    /* Positioning */
+    /* Box-model */
+    display: flex;
+    align-items: flex-end;
+    /* Typography */
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: o.vh_calc(40px);
+    line-height: o.vh_calc(60px);
+    font-family: Poppins;
+    color: #000000;
+    /* Visual */
+    /* Misc */
+}
+
+.menu {
+    /* Positioning */
+    /* Box-model */
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: o.vh_calc(100px);
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+.menu>li {
+    /* Positioning */
+    /* Box-model */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: o.vh_calc(40px) o.vh_calc(10px);
+    grid-template-areas:
+        "option"
+        "logo";
+    padding-top: o.vh_calc(10px);
+    padding-right: o.vw_calc(40px);
+    padding-bottom: o.vh_calc(10px);
+    padding-left: o.vw_calc(40px);
+    /* Typography */
+    list-style: none;
+    /* Visual */
+    /* Misc */
+}
+
+.menu>li>a {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: o.vh_calc(25px);
+    line-height: o.vh_calc(38px);
+    font-family: Poppins;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* Visual */
+    /* Misc */
+}
+
+.menu>li:target>label {
+    /* Positioning */
+    /* Box-model */
+    /* Typography */
+    /* Visual */
+    background-color: #6983A0;
+    border-radius: 100px;
+    /* Misc */
+}
+
+.main {
+    /* Positioning */
+    /* Box-model */
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+    margin-top: o.vh_calc(20px);
+    /* Typography */
+    /* Visual */
+    /* Misc */
+}
+
+.main-button {
+    /* Positioning */
+    /* Box-model */
+    grid-area: button;
+    justify-self: center;
+    min-width: o.vw_calc(200px);
+    height: o.vh_calc(40px);
+    /* Typography */
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    font-size: o.vh_calc(22px);
+    line-height: o.vh_calc(33px);
+    font-family: Poppins;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* Visual */
+    background-color: #6983A0;
+    box-shadow: 0px 3px 6px #00000005;
+    border-radius: 6px;
+    /* Misc */
+}

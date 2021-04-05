@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("http://weloveiconfonts.com/api/?family=entypo");
+/* Positioning */
+/* Box-model */
+/* Typography */
+/* Visual */
+/* Misc */
+* {
+  /* Positioning */
+  /* Box-model */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.container {
+  /* Positioning */
+  /* Box-model */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 13.8888888889vh 32.4074074074vh 1fr;
+  grid-template-areas: "titre" "background" "main";
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.titre {
+  /* Positioning */
+  /* Box-model */
+  display: flex;
+  align-items: flex-end;
+  /* Typography */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 3.7037037037vh;
+  line-height: 5.5555555556vh;
+  font-family: Poppins;
+  color: #000000;
+  /* Visual */
+  /* Misc */
+}
+
+.main {
+  /* Positioning */
+  /* Box-model */
+  display: flex;
+  flex-direction: column;
+  margin-top: 4.6296296296vh;
+  margin-bottom: 4.6296296296vh;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.options {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  font-size: 1.8518518519vh;
+  line-height: 2.7777777778vh;
+  font-family: Poppins;
+  color: #6983A0;
+  text-align: left;
+  text-transform: uppercase;
+  /* Visual */
+  /* Misc */
+}
+
+.options-contenu {
+  /* Positioning */
+  /* Box-model */
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.8518518519vh;
+  margin-bottom: 4.6296296296vh;
+  /* Typography */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  font-size: 1.3888888889vh;
+  line-height: 2.1296296296vh;
+  font-family: Poppins;
+  color: #262626;
+  text-align: left;
+  /* Visual */
+  /* Misc */
+}
+
+.options-contenu > input {
+  /* Positioning */
+  /* Box-model */
+  margin-bottom: 1.8518518519vh;
+  /* Typography */
+  /* Visual */
+  /* Misc */
+}
+
+.options-contenu > input {
+  /* Positioning */
+  /* Box-model */
+  height: 4.6296296296vh;
+  /* Typography */
+  /* Visual */
+  box-shadow: 0px 3px 6px #00000005;
+  border: 1px solid #BCBCBC;
+  border-radius: 6px;
+  /* Misc */
+}
+
+.options-bouton {
+  /* Positioning */
+  /* Box-model */
+  width: 18.2291666667vw;
+  height: 6.4814814815vh;
+  /* Typography */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  font-size: 2.037037037vh;
+  line-height: 3.0555555556vh;
+  font-family: Poppins;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  /* Visual */
+  background-color: #404C5B;
+  box-shadow: 0px 3px 6px #00000005;
+  border-radius: 6px;
+  /* Misc */
+}
+
+/*# sourceMappingURL=compte.css.map */
